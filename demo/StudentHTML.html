@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- This specifies version of HTML -->
+<html> <!-- every HTML page must start with <html> tag  and end with </html> tag -->
+<head> <!-- HTML is used for META DATA process- search engine and end with </head> tag -->
+<title> Student's Information System </title> <!-- to give title to the page and shown on the browser -->
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+</style>
+</head>
+<body style="background-color: #f1f1c1">
+<a href="http://127.0.0.1:8000/sdisplay/">my first Django page</a>
+<h1 style="text-align:center;"> Student Information System </h1>
+<ul>
+<li style="float:left"> <a href="Login.html">Login </a></li>
+<li style="float:left"> <a href="Login.html">Registration </a></li>
+<li style="float:left"> <a href="Login.html">Updation </a></li>
+<li style="float:left"> <a href="http://127.0.0.1:8000/sdisplay/">Search </a></li>
+</ul>
+<br>
+<form action="http://127.0.0.1:8000/create/">
+<label for="sid">Student ID   :  </label>
+<input type="text" id="sid" name="sid"><br><br>
+<label for="sname">Student Name :  </label>
+<input type="text" id="sname" class="m" name="sname"><br><br>
+<label for="sm1" min="0" max="100">Student Mark1  :  </label>
+<input type="number" id="sm1" class="m" name="sm1"><br><br>
+<label for="sm2" min="0" max="100">Student Mark2  :   </label>
+<input type="number" id="sm2" class="m" name="sm2"><br><br>
+<label for="sm3" min="0" max="100">Student Mark3  :   </label>
+<input type="number" id="sm3" name="sm3"><br><br>
+<input type="submit" ></input>
+</form>
+
+<h2>My First JavaScript</h2>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<button onclick="document.getElementById('sname').value=Date()">Pop Name</button>
+<p id="demo"></p>
+
+</body>
+</html>

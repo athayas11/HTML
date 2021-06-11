@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.success input {
+         border-color: green
+
+    }
+
+    .error input {
+        border-color: red
+    }
+</style>
+    <script >
+
+        function validate()
+        {
+
+            document.body.style.backgroundColor="cyan"
+            var mno = document.getElementById('Mobile').value;
+            document.getElementById('Mobile').style.color="red";
+
+            if (mno > 0)
+              alert("Entered Mobile Number is " + mno);
+            else
+
+                alert("Invalid Mobile Number");
+
+          var text1 = document.getElementById('ta').value;
+          alert("TextArea content :" + text1);
+          alert(text1);
+          document.getElementById('ta').value =  text1 + "\n"  +  Date() + ": " + mno;
+
+
+        }
+
+        function taclean()
+        {
+            document.getElementById('ta').value="";
+        }
+        function clean()
+        {
+            document.getElementById('Mobile').value="";
+            document.getElementById('Mobile').style.color="black";
+            document.body.style.backgroundColor="lightblue"
+
+                        var coll = document.getElementsByTagName('p');
+                        var x;
+                        for (x of coll)
+                        {
+                            alert(x.innerHTML);
+                            x.innerHTML ="text cleaned";
+                        }
+                    }
+
+                    function myFunction() {
+                        var mno, text;
+
+                        // Get the value of the input field with id="numb"
+                        ele = document.getElementById("num1");
+                        mno = ele.value;
+
+
+                        // If x is Not a Number or less than one or greater than 10
+                        if (isNaN(mno) || mno < 1 || mno > 10) {
+                            text = "Input not valid";
+                            ele.style.border= "red 2px dotted";
+                        } else {
+                            text = "Input OK";
+                            ele.style.border = 'black 2px solid';
+                        }
+                        alert(text);
+                        }
+                </script>
+            </head>
+            <body>
+
+            <h2 id="bulb">Bulb Demo</h2>
+            <p>Click On or off Switch to activate and deactvate Bulb</p>
+            <button onclick="document.getElementById('myImage').src='bulb_on.png'">Turn on the light</button>
+            <img id="myImage" src="bulb_off.png" style="width:100px">
+
+            <button onclick="document.getElementById('myImage').src='bulb_off.png'">Turn off the light</button>
+            <button onmouseover="document.getElementById('bulb').innerHTML='Hi welcome ....'"
+            onmouseout="document.getElementById('bulb').innerHTML='Bye...come back'">MouseOverMe </button>
+            <p>Sample Text to be changed</p>
+            <br>
+            <input type="text" id="Mobile" class = "success" placeholder="MobileNumber">
+            <button onclick="validate()">Validate </button>
+            <button onclick="clean()">Clear </button>
+            <br>
+            <input type="text" id="num1" placeholder="Number between 1 to 10">
+            <button onclick="myFunction()">Validate </button>
+            <br>
+            <br>
+            <textarea id='ta' rows=10 cols=50 > </textarea>
+            <button onclick="taclean()">Clear </button><br>
+
+            <button onclick="alert('you clicked Dummy Button')">Dummy </button><br>
+            <p> This paragraph content will b cleaned </p>
+            </body>
+
+            </html>

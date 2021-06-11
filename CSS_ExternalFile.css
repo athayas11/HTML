@@ -1,0 +1,46 @@
+p
+{
+  color: Green
+}
+
+#pid
+{
+  color: cyan
+}
+
+table,tr,td
+{
+border: 2px solid green;
+border-collapse: collapse;
+text-align: center;
+}
+.UK {
+    background-color: red;
+    color: yellow;
+    padding: 20px;
+  }
+  .Europe {
+    background-color: cyan;
+    padding: 30px;
+  }
+  .Asia{
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+  }
+  .myHeader,h4 {
+    background-color: lightblue;
+  }
+
+  h2,h1{
+    background-color: blue;
+    color: white;
+
+  }
+
+#id1   (h1 element having id=id1; class=pid)
+{
+
+
+}

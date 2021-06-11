@@ -1,0 +1,28 @@
+
+#theForm
+{
+color:white;
+display: table;
+padding: 15px;
+background-color: #2C8F77;
+border: solid 2px black;
+
+}
+<link type="text/css" rel="stylesheet" href="form1_Css.css">
+.row {
+display: table-row;
+color:white;
+background-color: #000000;
+}
+
+.row label {
+display: table-cell;
+padding: 2px;
+text-align:right;
+
+}
+
+.row input {
+display: table-cell;
+padding: 2px;
+}
